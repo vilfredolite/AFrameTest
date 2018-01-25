@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+<title>Hello, WebVR! - A-Frame</title>
+<meta name="description" content="Hello, WebVR! - A-Frame">
+<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+<script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v2.1.0/dist/aframe-physics-system.min.js"></script>
+<script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+</head>
+<body>
+<a-scene>
+<a-assets>
+<img id="skyimg" src="https://ucarecdn.com/065f19ca-99ef-431a-b470-63d98d63e1d0/" >
+</a-assets>
+<a-plane rotation="90 0 0" position="0 0 -3" material="black" height="10" width="10" static-body></a-plane>
+<a-box position="0 1.5 -3" rotation="0 0 0" color="#3a3a3a"
+             shadow height="2" width="3" depth=".6" static-body ></a-box>
+
+      <a-sphere position="0 5 -3" radius=".25" color="#666666" dynamic-body shadow></a-sphere>
+
+      <a-sphere position="0.1 8 -3" raidus=".1" height="4" dynamic-body></a-sphere>
+
+      <a-sphere position="0.2 8 -3" raidus=".1" height="4" dynamic-body></a-sphere>
+
+      <a-sphere position="-0.1 8 -3" raidus=".1" height="4" dynamic-body></a-sphere>
+
+      <a-cylinder position="1.2 .6 -2.8" radius="0.1" height=".5" color="#666666" shadow></a-cylinder>
+
+      <a-cylinder position="1.2 .6 -3.2" radius="0.05" height=".5" color="#666666" shadow></a-cylinder>
+
+      <a-cylinder position="-1.2 .6 -2.8" radius="0.05" height=".5" color="#666666" shadow></a-cylinder>
+
+      <a-cylinder position="-1.2 .6 -3.2" radius="0.05" height=".5" color="#666666" shadow></a-cylinder>
+
+      <a-plane position="0 1.5 -2.7" rotate="0 90 0" height="1.7" width="2.6"
+                <video id="my-video" src="https://ucarecdn.com/cd6e21ee-19cf-4e9d-bc02-59e644340d69/" autoplay="true">
+      </a-plane>
+
+    <a-entity position="0 2.25 -15" particle-system="preset: rain"></a-entity>
+
+
+
+  <a-sky src="#skyimg"></a-sky>
+
+    </a-scene>
+
+  </body>
+
+</html>
